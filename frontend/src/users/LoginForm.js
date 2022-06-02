@@ -24,7 +24,7 @@ function LoginForm() {
             },
             body: JSON.stringify(credentials)
         })
-    
+
         const data = await response.json()
 
         if (response.status === 200) {
@@ -34,8 +34,6 @@ function LoginForm() {
         } else {
             setErrorMessage(data.message)
         }
-    
-        console.log(data)
     }
 
     return (
